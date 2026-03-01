@@ -1,0 +1,13 @@
+camelCase = Começa com minuscula e as proximas palavras maiusculas
+PascalCase = Cada palavra maiusculas
+snake_case = Palavras são separadas por underline
+spinal-case = Palavras separadas por hífen
+
+Para clases, propriedades/atributos e métodos, normalmente usa-se PascalCase
+
+Variaveis/Objetos - usar camelCase
+
+Variaveis, Objetos, Atributos, etc.. - Não Abreviar e não colocar caracteres especiais (exceto "_")
+
+
+
