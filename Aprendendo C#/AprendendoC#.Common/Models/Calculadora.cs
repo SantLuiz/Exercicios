@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Aula_5___Operadores_Aritmeticos.Models
+namespace AprendendoC.Common.Models
 {
     public class Calculadora
     {

@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Aula 1 - Introdução/">
+    <Project Path="Aula 1 - Introdução/Aprendendo C#.csproj" />
+  </Folder>
+  <Folder Name="/Aula 2 - Fundamentos/">
+    <Project Path="Aula 2 - Fundamentos/Aula 2.csproj" />
+  </Folder>
+  <Folder Name="/Aula 3 - Casting/">
+    <Project Path="Aula 3 - Casting/Aula 3.csproj" />
+  </Folder>
+  <Project Path="AprendendoC#.Common/AprendendoC#.Common.csproj" />
+  <Project Path="Aula 4 - Operadores Condicionais/Aula 4 - Operadores Condicionais.csproj" />
+  <Project Path="Aula 5 - Operadores Aritmeticos/Aula 5 - Operadores Aritmeticos.csproj" />
+  <Project Path="Aula 6 - Laços/Aula 6 - Laços.csproj" />
+  <Project Path="Aula 7 - Estrutura de Projetos/Aula 7 - Estrutura de Projetos.csproj" />
+</Solution>

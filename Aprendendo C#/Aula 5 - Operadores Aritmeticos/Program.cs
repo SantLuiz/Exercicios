@@ -1,4 +1,4 @@
-﻿using Aula_5___Operadores_Aritmeticos.Models;
+﻿using AprendendoC.Common.Models;
 
 Calculadora calc = new Calculadora();
 
