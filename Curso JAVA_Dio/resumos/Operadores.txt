@@ -1,0 +1,55 @@
+OPERADORES - Símbolos especiais para realizar operações
+
+
+
+= operador de ATRIBUIÇÃO (associa um valor para uma variável)
+
++ - / * % ARITMÉTICOS (fazer continhas)
+
+Para tipos textuais, o operador + vai realizar a concatenação
+
+Dependendo da ordem de como os elementos são declarados, uma variáveis pode passar de numérica para string 
+A partir do momento em que o compilador identificar que existe uma string sendo "somada", ele passa a concatenar ao invés de realizar a soma (isso pode ser contornado, colocando determinada parte da expressão em evidência)
+
+
+UNÁRIOS
+Utilizados junto dos aritméticos, para realizar trabalhos básico como incrementar ou decrementar
+
++ > Positivo (números já são positivos por padrão sem este operador)
+- > Negativo (Nega um numero ou expressão)
+! > Negação (porta Not)
+-- > Decremento (decrementa 1)
+++ > Incremento (aumenta 1)
+
+
+Operador TERNÁRIO
+
+Forma resumida de IF, que cabe em uma única linha, representado por ?:
+
+<Expressão Condicional> ? <Caso seja True> : <Caso seja False>
+
+Exemplo 
+
+int a = 1;
+int b = 2;
+
+a==b ? "Sim" : "Não";
+
+
+RELACIONAIS
+
+Verificam relações como igualdade, diferença, maior que, menor que, menor ou igual...
+
+== Igualdade
+!= Diferença
+> Maior
+>= Maior ou igual
+< Menor
+<=  Menor ou igual
+
+No caso de igualde, é interessante utilizar o == para números, mas para conteúdos, é melhor utilizar o método .equals
+
+Logicos
+
+&& Porta E
+|| Porta OU 

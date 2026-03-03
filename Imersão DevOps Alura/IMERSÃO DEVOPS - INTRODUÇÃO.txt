@@ -1,0 +1,42 @@
+IMERSÃO DEVOPS - INTRODUÇÃO
+Palavras Chaves para Certificado - 
+Aula 1 - MARVEL
+Aula 2 - ELLIS
+Aula 3 - YAML
+
+O que é?
+Uma filosofia e conjunto de praticas que integram os times de desenvolvimento (DEV) e as operações(OPS) - Basicamente, fazendo conversarem da melhor forma possível e tornando o desenvolvimento e a manutenção de sistemas mais simples e praticas. "Como podemos trabalhar juntos para produzir o melhor software possível"
+
+Times 
+Desenvolvimento - Responsável por projetar, codificar, testar soluções de software que atendam as necessidades do negocio
+	Planejar
+	Codificar
+	Integrar
+	Testar
+Operações - Manter a infraestrutura, disponibilidade e garantir que ele está funcionado de forma estável e segura
+	Liberar
+	Implantar
+	Operar
+	Monitorar
+
+Termos Importantes e principais praticas
+
+Integração Contínua (CI) - O código é integrado e testado constantemente
+	
+Entregar Contínua(CD) - Garante que as mudanças do código estejam prontas para entrar em produção de forma mais rápida
+
+Infraestrutura como Código (IaC) - Pratica essencial que permite que a configuração de servidores e ambientes seja feita de forma automatizada da mesma forma que o código fonte do código, eliminando a necessidade de ajustes manuais, tornando mais ágil e reduzindo a probabilidade de erros humanos.
+
+Controle de Versão
+Desenvolvimento de Software Agile
+Monitoramento Contínuo
+
+Link Aula
+https://www.youtube.com/watch?v=Is29ghAMSvY&t=916s
+Artigo Explicativo
+https://www.alura.com.br/artigos/o-que-e-devops?srsltid=AfmBOooMBNklZcfE0FvGuaQ1B0ZGZVtDmP5J2wn8EqKGdLz-Jjvmy5m4/
+
+
+
+
+

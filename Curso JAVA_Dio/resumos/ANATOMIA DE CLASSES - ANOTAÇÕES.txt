@@ -1,0 +1,55 @@
+ANATOMIA DE CLASSES - ANOTAÇÕES
+
+
+Todo código do java é separado em classes (que são nomeadas com cada palavra iniciada em letra maiúscula) e são armazenadas dentro da pasta src do projeto.
+
+Regras de nomenclatura 
+
+Todo arquivo começa com letra maiúscula, e caso seja um nome composto, cada nome também terá o nome em maiúsculo
+A classe deve SEMPRE ter o mesmo nome do arquivo
+Toda variável deve começar com letra minúscula, mas caso seja um nome composto, a palavras seguintes começaram com letra maiúscula (camelCase)
+para variáveis FINAL, o nome deve ser todo em maiúsculo e as palavras separadas por underline(_)
+Variáveis só podem ser nomeadas por letras,underline, $ ou numero de 0 a 0
+Deve sempre começar por letra (preferencialmente minúscula), ou _ ou $, mas nunca com números
+Não deve ter espaços
+Não pode ser uma palavras chave
+Deve ser único dentro do escopo
+
+variáveis sempre serão |Tipo nomeVariavel = Valor;|
+
+métodos serão |TipoRetorno nomeObjetivoNoInfinitivo (TipoParametro NomeParametro) {CORPO_DO_MÉTODO}|
+
+Organização de Arquivos
+
+A medida que vão surgindo novos arquivos no projeto, passamos a organiza-los por meio de packages(pacotes)
+
+exemplo, para o caso de um estudante salvando os projetos enquanto estuda 
+
+edu.luiz.algoritmos.semanaum
+
+no caso do VSCode, cada item que está separado por ponto, seria o nome de uma das pastas, que deve ser criado separadamente(no Eclipse, isso seria feito automaticamente)
+
+no arquivo, devemos passar |package edu.luiz.algoritmos.semanaum| para o código entender onde está localizado
+
+JavaBeans
+
+Iniciativa conceitual da comunidade, para padronizar a forma como declaramos métodos, variáveis, classes, pacotes, atributos e etc. com o intuito de deixar mais legível.
+
+>Variaveis
+Uma variável deve ser clara, sem abreviações
+Sempre no singular, exceto se for um array ou coleção
+Todas devem ser declaradas no mesmo idioma
+
+>Métodos
+Devem ser nomeados como verbos, com todas as letras em minúscula, exceto se for um nome composto(a partir da segunda palavra)
+Métodos devem fazer apenas 1 coisa, ao invés de um método CalcularImprimir, seria interessante termos 1 método Calcular e outro método imprimir
+
+
+
+
+
+
+
+
+
+

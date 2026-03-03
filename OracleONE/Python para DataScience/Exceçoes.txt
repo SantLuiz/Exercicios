@@ -1,0 +1,3 @@
+No Python existem basicamente duas formas distintas de erros: os de sintaxe e as exceções. As exceções são uma forma de lidar com erros e situações inesperadas no código, garantindo um fluxo de execução mais controlado.
+
+exceções -> Erros detectados durante a execução do programa e que interrompem o fluxo quando não tratadas

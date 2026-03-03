@@ -1,0 +1,10 @@
+Funcoes Lambda
+
+Funcoes que são criadas para serem utilizadas apenas 1 vez, tambem são conhecidas como funcoes anônimas, não precisam ser definidas e podem ser descritas em uma unica linha
+o formato padrão é Lambda <variavel> : <expressão>
+Sendo a variavel, o parâmetro desta função
+
+Em ciência de dados, muitas vezes a funções Lambda é usada juntamente com a built-in function MAP
+o Map tem como função mapear valores
+
+a forma mais comum de se fazer isso é map(<lambda function>,<iterador>)

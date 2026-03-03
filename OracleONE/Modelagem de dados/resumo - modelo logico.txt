@@ -1,0 +1,44 @@
+O que é um Modelo Lógico?
+Um modelo lógico é uma representação estruturada de como os dados serão organizados em um banco de dados. Ele descreve as entidades, que são objetos ou conceitos sobre os quais queremos armazenar informações, e os atributos, que são as propriedades dessas entidades. O modelo lógico serve como um intermediário entre o modelo conceitual, que é mais abstrato e focado nas necessidades de negócios, e o modelo físico, que é implementado diretamente no sistema de gerenciamento de banco de dados (SGBD).
+
+Entidades
+Entidades são elementos fundamentais no modelo lógico. Elas representam objetos ou conceitos do mundo real que possuem existência independente e que queremos armazenar no banco de dados. Cada entidade é definida por um conjunto de atributos que a caracterizam.
+
+Por exemplo, em um sistema de gerenciamento de biblioteca, algumas possíveis entidades são:
+
+Livro
+Autor
+Usuário
+Cada entidade deve ser identificável de forma única dentro do sistema.
+
+Atributos
+Atributos são as propriedades ou características que descrevem uma entidade. Cada atributo tem um nome. Eles fornecem mais detalhes sobre a entidade e permitem armazenar informações relevantes.
+
+Considerando as entidades mencionadas, alguns exemplos de atributos são:
+
+Livro
+
+ID do Livro
+Título
+ISBN
+Ano de Publicação
+Autor
+
+ID do Autor
+Nome
+Nacionalidade
+Usuário
+
+ID do Usuário
+Nome
+Email
+Data de Cadastro
+Os atributos ajudam a capturar todas as informações necessárias sobre cada entidade de maneira estruturada e organizada.
+
+Passando do Modelo Conceitual para o Modelo Lógico
+A transição do modelo conceitual para o modelo lógico envolve várias etapas importantes:
+
+Identificação das Entidades: No modelo conceitual, começamos identificando todas as entidades principais baseadas nos requisitos do negócio. Essas entidades são então mapeadas diretamente para o modelo lógico.
+Definição dos Atributos: Para cada entidade identificada, determinamos os atributos necessários. Esses atributos são propriedades que descrevem a entidade e são derivadas das necessidades de informação do negócio.
+O modelo lógico é um passo crucial no desenvolvimento de um banco de dados bem-estruturado. Ele traduz as necessidades de negócio, capturadas no modelo conceitual, em uma estrutura organizada de entidades e atributos. Essa estrutura serve como base para a implementação física do banco de dados, garantindo que os dados sejam armazenados de maneira eficiente, consistente e fácil de acessar.
+

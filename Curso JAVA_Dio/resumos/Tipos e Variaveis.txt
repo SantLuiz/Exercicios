@@ -1,0 +1,24 @@
+No Java, alguma palavras reservadas servem para representar dados básicos que precisam ser manipulados para construção de programas, este são os chamados tipos primitivos
+Eles são 8 (int, byte, short, long, float, double, boolean e char, que não são considerados objetos e representam valores brutos, armazenados diretamente na pilha de memoria.
+Para inteiros, geralmente usamos o int pois a própria JVM já tenta converter byte e short para int por uma questão de compatibilidade
+E para decimais, usamos mais double por uma questão de precisão, mesmo que o float utilize apenas metade da memoria
+
+tipos possuem um valor padrão, 
+	Numero > 0
+	Caracter > '\u0000' (caracter nulo)
+	Logicos>False
+
+Importante: Variáveis locais (dentro de métodos) não têm valor padrão e devem ser inicializadas antes do uso, caso contrário o compilador exibirá um erro.
+
+Float, precisa sempre terminar com um F no final, assim como o long que deve terminar com um L
+
+java é fortemente tipada, então algumas situações de mudança de tipo de variáveis para tipos mais abrangentes são aceitas, mas tentar colocar para tipos mais restritos, pode não funcionar
+
+Casting, recurso do java que permite buscar uma variável de um tipo mais abrangente para um tipo mais restrito 
+
+Constantes
+
+São valores armazenados em memoria, cujo o valor nunca poderá ser alterado, sem java, utilizamos a palavra reservada Final para declarar isso
+Constantes são sempre declaradas em CAIXA_ALTA	
+
+o java não possui um tipo primitivo para armazenar texto, portante temos a classe String, que serve para esta finalidade

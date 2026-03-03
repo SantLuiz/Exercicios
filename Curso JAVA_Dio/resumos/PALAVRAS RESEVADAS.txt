@@ -1,0 +1,48 @@
+PALAVRAS RESEVADAS
+
+palavras que são identificadores de uma linguagem que já possuem funções, em java, existem 52 palavras reservadas, todas com seu grupo e classificação, sendo escritas em letra minúscula e com cores especiais em quase todas as IDE's
+
+Controle de pacotes
+	import - importa pacotes ou classes
+	package - especifica a qual pacote as classe do arquivo pertencem
+
+Modificadores de Acesso
+	public
+	private
+	protected
+
+Primitivos
+	int
+	long 
+	shot
+	byte
+	char
+	double
+	float
+	boolean
+	void
+
+Modificadores de Classes/Variáveis/Métodos
+	abstract - classe não pode ser instanciada ou método que precisa ser implementado numa subclasse não abstrata
+	class 
+	extends - indica a superclasse que está sendo herdada
+	final - impossibilida que seja estendida ou sobrescrita
+	implements - para interfaces
+	interface
+	native - indica que um método está escrito em uma linguagem que depende de plataforma, como C 
+	new
+	static - faz um método ou variável pertencer a classe ao invés das instancias
+	strictfp - indica que os números do float seguirão as regras de ponto flutuante em todas as expressões
+	synchronized - indica que o método só pode ser acessa por uma thread por vez
+	transient - impede a serialização de campos (não serão salvas em disco/bancos de dados)
+	volatile - pode ser alterada durante uma thread
+
+Controle de fluxo
+	break
+	case
+	continue - p
+	
+
+
+	
+	

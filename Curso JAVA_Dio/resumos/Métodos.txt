@@ -1,0 +1,16 @@
+Métodos
+
+PADROES PARA DEFINIÇÃO DE METODOS
+
+	nomeados como verbo (andar, contar, etc)
+	camelCase (calcularImposto)
+
+EM JAVA, não existem métodos globais, então devem estar sempre dentro de uma classe
+
+CRITERIOS PARA DEFINIÇÃO DE MÉTODOS:
+
+
+	Qual a proposta principal do método?
+	Qual o retorno esperado?
+
+

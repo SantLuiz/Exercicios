@@ -1,0 +1,104 @@
+Modelagem de dados -> conjunto de ações que servem desde projetar um banco de dados, extrair informações, trata-los, e trabalhar com eles
+
+Modelo conceitual -> Após definir o minimundo e coletar os requisitos, o próximo passo é criar um Modelo Conceitual. Este modelo é uma representação visual de alta abstração de como os dados no sistema são organizados. Ele usa elementos como entidades (objetos do mundo real como 'Livro' ou 'Leitor'), atributos (propriedades das entidades como 'Título do Livro' ou 'Nome do Leitor') e relacionamentos (como 'empresta' entre 'Leitor' e 'Livro'). O modelo conceitual é geralmente criado usando um Diagrama Entidade-Relacionamento (DER), que ajuda a visualizar como os diferentes elementos estão interconectados.
+
+Minimundo -> O conceito de Minimundo refere-se a uma parte específica do mundo real que é relevante para o sistema que está sendo desenvolvido. Imagine que você está construindo um sistema para uma biblioteca; o minimundo incluiria coisas como livros, empréstimos, leitores e funcionários, mas não incluiria elementos irrelevantes como o café vendido na cafeteria ao lado. O minimundo ajuda a definir claramente o escopo do que será incluído no sistema de banco de dados.
+
+Levantamento de requisitos ->O Levantamento de Requisitos é o processo de coletar informações sobre o que os usuários precisam e esperam do sistema. No contexto da biblioteca, isso poderia envolver entender como os leitores gostariam de pesquisar livros, quais informações sobre os livros são importantes (como título, autor, gênero), e como os funcionários gerenciam os empréstimos. Esse processo é crucial porque define as funcionalidades que o sistema precisa suportar e influencia diretamente como o banco de dados será projetado.
+
+
+Sugestão de ferramenta para o desenvolvimento do modelo conceitual -> Visual Paradigm [https://online.visual-paradigm.com/pt/]
+
+Criar modelos de dados à mão, especialmente para sistemas complexos, pode ser muito complicado e propenso a erros. É aí que entram as ferramentas de modelagem de dados. Elas nos ajudam a desenhar os modelos de forma mais eficiente, garantindo que todas as peças se encaixem corretamente. Além disso, muitas dessas ferramentas têm funcionalidades que automaticamente verificam se o modelo está seguindo as melhores práticas e regras de negócio.
+
+Sugestão de programas para modelagem de dados -> ERwin, Microsoft Visio, Lucidchart
+
+Entidade -> Uma entidade é um elemento dentro do modelo de dados que representa algo capaz de ser identificado de forma única. Em outras palavras, é uma "coisa" que existe por si só e possui características específicas. Essas características são chamadas de atributos, que registram informações sobre a entidade.
+
+Entidade Forte -> Entidade que existe de forma idenpendente de outras entidades (Ex. Funcionario) - Representado p/ Retagulo Simples
+Entidade Fraca -> Entidade que só existe por estar relacionada a outra entidade (Ex. Dependentes)   Representado p/ Retangulo Duplo
+
+A cardinalidade nos relacionamentos em um modelo conceitual é um aspecto fundamental que descreve como as entidades estão quantitativamente relacionadas em um banco de dados. Em outras palavras, a cardinalidade define o número de instâncias de uma entidade que podem ou devem estar associadas a um número de instâncias de outra entidade. Este conceito é crucial para desenhar um sistema de banco de dados que reflita com precisão as regras e necessidades de negócio.
+
+Tipos de Cardinalidade
+A cardinalidade é tipicamente expressa em termos das possíveis quantidades de conexões entre entidades e é categorizada principalmente em três tipos:
+
+Obs.: Nesta representação, apenas a cardinalidade máxima é informada
+
+Um-para-Um (1:1):
+Descrição: Cada instância de uma entidade está associada a no máximo uma instância da outra entidade.
+
+Exemplo: Suponha um sistema onde cada Gerente é responsável por um único Departamento e cada Departamento é gerenciado por um único Gerente. Aqui, a relação entre Gerente e Departamento é um-para-um.
+
+Um-para-Muitos (1:N):
+Descrição: Uma instância de uma entidade pode estar associada a várias instâncias de outra entidade, mas uma instância da segunda entidade pode estar associada a no máximo uma instância da primeira entidade.
+
+Exemplo: Em um sistema escolar, um Professor pode lecionar várias Turmas, mas cada Turma é lecionada por apenas um Professor. Assim, a relação entre Professor e Turma é um-para-muitos.
+
+Muitos-para-Muitos (N:M):
+Descrição: Instâncias de uma entidade podem estar associadas a várias instâncias da outra entidade e vice-versa.
+
+Exemplo: Em uma universidade, um Estudante pode se inscrever em várias Disciplinas e cada Disciplina pode ter vários Estudantes inscritos. Esta é uma relação muitos-para-muitos.
+
+Representação da Cardinalidade
+Em um Diagrama Entidade-Relacionamento (DER), a cardinalidade é representada por meio de símbolos ou etiquetas nas linhas que conectam as entidades. Esses símbolos indicam as regras de cardinalidade, como "1", "N" ou "M", mostrando como as entidades estão relacionadas.
+
+Importância da Cardinalidade
+Integridade dos Dados: As regras de cardinalidade ajudam a manter a integridade dos dados ao garantir que os relacionamentos entre as entidades respeitem as regras de negócio definidas. Isso previne erros como ter uma Turma sem Professor em um sistema que exige que todas as turmas tenham professores.
+
+Eficiência na Consulta: Entender as cardinalidades ajuda a otimizar as consultas ao banco de dados. Por exemplo, saber que a relação entre Professor e Turma é 1 permite otimizações ao buscar todas as turmas de um professor específico.
+
+Design do Banco de Dados: A cardinalidade informa decisões sobre como as tabelas devem ser estruturadas, como os índices devem ser criados e como as chaves estrangeiras são definidas, influenciando diretamente a performance e a escalabilidade do banco de dados.
+
+Portanto, definir corretamente as cardinalidades dos relacionamentos no modelo conceitual é crucial para o sucesso do design e da funcionalidade de um sistema de banco de dados, garantindo que ele seja capaz de atender eficientemente às necessidades do usuário e às exigências do negócio.
+
+No modelo conceitual de um banco de dados, os atributos são essenciais para definir as propriedades das entidades. Os atributos podem ser categorizados em diferentes tipos, cada um com sua especificidade e uso. Aqui estão os tipos principais de atributos e exemplos para cada categoria:
+
+1 - Atributos Simples
+
+Atributos simples são aqueles que não podem ser divididos em subpartes que têm significado independente no contexto do modelo de banco de dados.
+
+Exemplo:
+Idade de uma pessoa.
+Preço de um produto.
+2 - Atributos Compostos
+
+Atributos compostos podem ser divididos em partes menores, cada uma com um significado próprio e que, juntas, compõem o atributo completo.
+
+Exemplo:
+Nome de uma pessoa pode ser dividido em Primeiro Nome, Nome do Meio e Sobrenome.
+Endereço, que pode ser dividido em Rua, Número, Cidade, Estado e CEP.
+3 - Atributos Multivalorados
+
+Atributos multivalorados podem conter dois ou mais valores para uma única instância de uma entidade. Este tipo de atributo é útil quando uma entidade pode possuir várias ocorrências de uma propriedade.
+
+Exemplo:
+Telefone: Uma pessoa pode ter vários números de telefone, incluindo telefone residencial, celular e trabalho.
+Habilidades: Um funcionário pode possuir várias habilidades técnicas.
+4 - Atributos Derivados
+
+Atributos derivados são aqueles cujos valores são calculados ou derivados de outros atributos.
+
+Exemplo:
+Idade pode ser derivada a partir da Data de Nascimento de uma pessoa.
+Salário Anual pode ser calculado a partir do salário mensal multiplicado por 12.
+5 - Atributos-chave
+
+Atributos-chave são usados para identificar de forma única cada instância de uma entidade em um banco de dados.
+
+Exemplo:
+CPF de uma pessoa.
+Registro Acadêmico de um estudante em uma universidade.
+6 - Atributos Descritivos
+
+Atributos descritivos são aqueles que fornecem mais informações sobre uma instância de entidade e ajudam a qualificar, classificar ou esclarecer a entidade.
+
+Exemplo:
+Cor de um carro.
+Descrição de um produto.
+Importância dos Atributos no Modelo Conceitual
+Definição Completa das Entidades: Atributos são essenciais para fornecer uma descrição completa das entidades. Eles definem as propriedades que serão armazenadas no banco de dados.
+Suporte à Funcionalidade do Banco de Dados: Os atributos determinam a natureza das informações que podem ser recolhidas, armazenadas e manipuladas, o que é crucial para as operações de consulta e manutenção de dados.
+Impacto na Integridade dos Dados: Atributos chave e compostos ajudam a manter a integridade dos dados, garantindo que os dados estejam completos e sejam unicamente identificáveis.
+Compreender os diferentes tipos de atributos e saber como aplicá-los corretamente no modelo conceitual é fundamental para o desenvolvimento de um sistema de banco de dados eficaz e eficiente.
+

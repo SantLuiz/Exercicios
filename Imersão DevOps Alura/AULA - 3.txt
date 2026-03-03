@@ -1,0 +1,5 @@
+Realizando o Deploy da Aplicação no Google Cloud Plataform ->
+
+Google Cloud Plataform -> Serviço onde podemos deixar uma aplicação rodando na nuvem, de modo que outras maquinas podem acessar
+
+

@@ -1,0 +1,53 @@
+OPERADORES – Símbolos especiais para realizar operações em Java
+
+ATRIBUIÇÃO
+=   → Operador de atribuição: associa um valor a uma variável.
+      Exemplo: int x = 10;
+
+ARITMÉTICOS
++   → Soma ou concatenação (se houver String envolvida)
+-   → Subtração
+*   → Multiplicação
+/   → Divisão
+%   → Módulo (resto da divisão)
+
+- Quando utilizado com tipos textuais (String), o operador + realiza concatenação.
+  Exemplo: "Resultado: " + 2 + 3 → Resultado: 23
+  Para forçar soma antes da concatenação: "Resultado: " + (2 + 3) → Resultado: 5
+
+UNÁRIOS
++   → Indica valor positivo (geralmente implícito)
+-   → Nega um número (transforma positivo em negativo e vice-versa)
+!   → Negação lógica (inverte valores booleanos)
+++  → Incremento (soma 1 ao valor da variável)
+--  → Decremento (subtrai 1 do valor da variável)
+
+OPERADOR TERNÁRIO
+Forma compacta de um if/else para expressões simples:
+<condição> ? <valor_se_verdadeiro> : <valor_se_falso>;
+
+Exemplo:
+int a = 1;
+int b = 2;
+String resultado = (a == b) ? "Sim" : "Não";
+
+RELACIONAIS
+==  → Igualdade de valor
+!=  → Diferente
+>   → Maior que
+>=  → Maior ou igual
+<   → Menor que
+<=  → Menor ou igual
+
+- Para comparar conteúdos de objetos (como Strings), utilize o método equals():
+  Exemplo: "java".equals("java") → true
+
+LÓGICOS
+&&  → E lógico (true se ambas as expressões forem verdadeiras)
+||  → OU lógico (true se ao menos uma expressão for verdadeira)
+!   → NÃO lógico (inverte um valor booleano)
+
+DICAS:
+- Evite misturar muitos operadores na mesma linha sem parênteses; a ordem de precedência pode afetar o resultado.
+- Sempre teste operações com strings para evitar erros inesperados de concatenação.
+- O operador ternário é útil, mas deve ser usado com moderação para manter a legibilidade.

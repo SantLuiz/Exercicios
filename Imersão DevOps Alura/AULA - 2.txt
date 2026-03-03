@@ -1,0 +1,9 @@
+Docker compose -> ferramenta do Docker usada para definir e gerenciar múltiplos containers (serviços) de forma simples, usando um único arquivo de configuração.
+Com ele, você pode subir uma aplicação inteira (por exemplo, um backend, um banco de dados e um frontend) com um único comando docker-compose up
+YAML - > formato de arquivo de texto usado para configurar o docker-compose.
+YAML (YAML Ain’t Markup Language) é uma linguagem de serialização de dados, muito usada para arquivos de configuração por ser simples e legível.
+
+Em um navegador, ao digitar "repo.new" ele vai direto para o github, na pagina de criação de repositorios
+
+podemos utilizar a aba de actions do github para automatizar a criação das imagens, utilizando o docker-image.yml
+Desta forma, ao fazer um commit, ele já builda automaticamente a imagem (Isso é uma etapa de CI - Continuos Integration)

@@ -1,0 +1,36 @@
+Criando um ambiente real com dockers
+
+Docker -> Docker é uma plataforma que permite criar, empacotar, distribuir e executar aplicações em ambientes isolados chamados containers, garantindo que o código funcione da mesma forma em qualquer ambiente (desenvolvimento, teste ou produção).
+
+Containers -> semelhante a uma maquina virtual, mas ao invés de criar um sistema operacional completo com todas as dependências, cria apenas uma imagem menor e efêmero
+É uma boa pratica que esta imagem atenda somente a um recurso e que ela seja o mais leve o possível - 
+Containers não simulam um sistema operacional completo, como as máquinas virtuais. Eles compartilham o kernel do sistema operacional hospedeiro (host), mas funcionam de forma isolada, com suas próprias bibliotecas e dependências.
+
+São efêmeros por padrão, ou seja, descartáveis e reproduzíveis.
+
+A boa prática de "um serviço por container" é comum para facilitar manutenção e escalabilidade.
+
+O termo "imagem" refere-se a um modelo imutável de container, usado para gerar instâncias (os containers em si).
+
+Usa-se FROM para importar conjuntos de codigo diretamente do DockerHUB, para que desta forma, ao inves de baixar todo um sistema operacional, baixamos apenas o minimo necessario
+
+Imagem Docker -> Um snapshot imutável de um sistema de arquivos com tudo necessário para executar uma aplicação. Você constrói uma imagem com o Dockerfile e executa containers a partir dela.
+
+Dockerhub -> DockerHub é um repositório público e privado de imagens Docker, onde é possível armazenar, compartilhar e versionar imagens. É o padrão utilizado quando você executa um docker pull ou usa FROM no Dockerfile. (como por exemplo para importar o minimo necessario para o python ou outra linguagem rodar)
+DockerFile -> O Dockerfile é um script de instruções que define como a imagem Docker será construída. Cada linha representa um passo no build da imagem (por exemplo: copiar arquivos, instalar dependências, expor portas, rodar comandos).
+.dockerignore -> Semelhante ao .gitignore, Evita copiar arquivos desnecessários (como logs, .git, arquivos grandes, secrets etc.) para a imagem, tornando a build mais leve e segura.
+
+Entrypoint / CMD
+
+CMD: Comando padrão que será executado quando o container iniciar.
+
+ENTRYPOINT: Define o comando principal do container, com mais rigidez.
+Usados no Dockerfile.
+
+Expose / Port Mapping
+EXPOSE define que uma porta será usada, mas o mapeamento real ocorre com -p host:container, ex: -p 8080:80.
+
+Alpine
+Distribuição Linux super leve (5MB), muito usada para criar imagens Docker minimalistas.
+
+A imagem Docker é criada com o comando docker build, usando o Dockerfile como base. Esse arquivo define tudo o que a imagem precisa para funcionar corretamente: linguagem, dependências, arquivos da aplicação, comandos de execução, etc.

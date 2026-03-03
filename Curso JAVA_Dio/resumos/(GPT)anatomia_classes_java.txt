@@ -1,0 +1,88 @@
+ANATOMIA DE CLASSES - RESUMO E BOAS PRÁTICAS EM JAVA
+
+Estrutura do Código Java
+
+Todo código em Java é organizado dentro de classes, que são armazenadas dentro da pasta src do projeto (ou uma estrutura de diretórios definida por package). Cada classe representa uma unidade do programa.
+
+Regras de Nomenclatura
+
+Classes:
+- Devem começar com letra maiúscula.
+- Para nomes compostos, usa-se PascalCase (ex: MinhaClasseJava).
+- O nome da classe deve ser idêntico ao nome do arquivo (especialmente se a classe for public).
+
+Variáveis:
+- Devem começar com letra minúscula.
+- Para nomes compostos, usa-se camelCase (ex: nomeCompleto, quantidadeMaxima).
+- Não podem começar com números.
+- Podem conter: letras, números, underscore (_) e cifrão ($).
+- Não podem conter espaços.
+- Não podem ter o nome de uma palavra-chave da linguagem.
+- Devem ser únicas dentro do escopo.
+- Para constantes (final), utiliza-se todas as letras maiúsculas, com palavras separadas por underscore:
+  Exemplo: final int QUANTIDADE_MAXIMA = 100;
+
+Declaração de Variáveis
+
+A estrutura básica é:
+Tipo nomeVariavel = valorInicial;
+
+O valor inicial não é obrigatório na declaração, mas a variável deve ser inicializada antes do uso.
+
+Métodos
+
+Declaração padrão:
+TipoDeRetorno nomeDoMetodo(Tipo parametro) {
+    // corpo do método
+}
+
+Boas práticas:
+- O nome do método deve ser um verbo ou ação, em camelCase (ex: calcularMedia, imprimirRelatorio).
+- Um método deve realizar uma única tarefa bem definida (princípio da responsabilidade única).
+- Evite nomes como processarTudo ou calcularEImprimir — prefira separar as ações em métodos distintos.
+
+Organização com Packages (Pacotes)
+
+Conforme o projeto cresce, as classes são organizadas em packages, que funcionam como pastas.
+
+Exemplo de package:
+edu.luiz.algoritmos.semanaum
+
+No VS Code, cada ponto (.) no nome do pacote representa uma pasta. Você deve criar manualmente essa estrutura.
+
+No topo de cada arquivo Java, é necessário declarar o package:
+package edu.luiz.algoritmos.semanaum;
+
+No Eclipse e outras IDEs, essa estrutura é criada automaticamente.
+
+Padrão JavaBeans
+
+JavaBeans é uma convenção informal da comunidade Java para padronizar nomes de classes, variáveis e métodos, facilitando a leitura e manutenção do código.
+
+Variáveis:
+- Nomes devem ser claros, sem abreviações desnecessárias.
+- Sempre no singular, exceto coleções ou arrays (ex: nomes, valores).
+- Devem ser escritas no mesmo idioma usado no restante do código (idealmente inglês, mas seja consistente).
+
+Métodos:
+- Nomeados como verbos em camelCase (ex: getNome, setIdade, calcularTotal).
+- Métodos get/set são usados para acessar ou modificar atributos privados (encapsulamento).
+
+Exemplo:
+public class Aluno {
+    private String nome;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
+
+Dicas Extras
+
+- Sempre comente trechos importantes com // ou /** */ quando for necessário explicar regras de negócio.
+- Separe classes por responsabilidade, evitando classes com muitas funções.
+- Utilize indentação e espaçamento adequados para manter a legibilidade.

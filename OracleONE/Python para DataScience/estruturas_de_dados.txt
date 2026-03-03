@@ -1,0 +1,1 @@
+Enquanto as listas são mutaveis, tuplas são imutaveis
